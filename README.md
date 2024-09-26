@@ -10,5 +10,6 @@
 <h3>This is heading 3</h3>
 <img  src= " https://images.pexels.com/photos/3729464/pexels-photo-3729464.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1 " alt= "this is the car" />
 
+<p> car example </p>
 </body>
 </html>
