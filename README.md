@@ -1,6 +1,9 @@
 <html>
 <body>
-
+<header>
+<meta charset="utf.8" />
+  
+</header>
 <h1>My First Heading</h1>
 <p>My first paragraph.</p>
 
@@ -13,5 +16,7 @@
 <p> lol </p>
 <p> car example </p>
 <link> https://github.com/N-P27/Webpage---Webdev.-Sem-1/blob/main/README.md?plain=1 </link>
+
+
 </body>
 </html>
