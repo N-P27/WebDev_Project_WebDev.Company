@@ -3,11 +3,52 @@
     <head>
         <meta charset = "utf-8"/>
         <title>Contact Page</title>
+        <link rel = "stylesheet" href ="css/contact.css">
     </head>
     <body>
-        <h1>Contact Page</h1>
+        <nav id = "topnav">
+             <a id = "logo" class = "nav-link" href="Main_page.html">Home</a>
+             <a class = "nav-link" href="Main_page.html">About</a>
+             <a class = "nav-link" href="Main_page.html">Contact</a>
+             <a id = "cart" class = "nav-link" href="Main_page.html">Cart</a>
+        </nav>
+
+        <h1>Contact Us!</h1>
+        <br><br>
+      
+        <h2> Hi! If you have any queries please use the Inquiry form on this page!</h2>
+
+        <FORM>
+            <fieldset> <legend>Inquiry Form</legend>
+
+                Name : <input type="text"> <br>
+                Email : <input type="text"> <br>
+                Contact No. <input type="text"> <br>
+                Reason for Inquiry <input list = "Inquiries">
+
+                <datalist id="Inquiries">
+                    <option value = "Specific Brand information">
+                    <option value = "Car Showcasing Date Arrangement">
+                    <option value = "Other">
+
+                </datalist>
+        
+                <p> If you selected "Other" please expand in further details below : </p>
+
+                <textarea id = "OtherText"
+                          name = "OtherText"
+                          rows = "10"
+                          cols = "50">
+                </textarea>
+                <br>
+                    <button>submit</button>
+            </fieldset>
+        </FORM>
     </body>
     <footer>
+        <a href = "#">Instagram</a>
+        <a href = "#">Facebook</a>
+        <a href = "#">VSCO</a>
 
     </footer>
 </html>
