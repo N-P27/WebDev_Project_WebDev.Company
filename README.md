@@ -7,7 +7,7 @@
 <body>
 <nav>
 <ul>
-<li><a href="#home">Home</a></li>
+<li><a href="https://github.com/N-P27/Webpage---Webdev.-Sem-1/blob/main/Main_page.html">Home</a></li>
 <li><a href="https://github.com/N-P27/Webpage---Webdev.-Sem-1/blob/e2bec183b5d410c9231929c62d9d96dca4f6fdaf/README.md">About Us</a></li> 
 <li><a href="file:///c%3A/Users/natha/OneDrive/Desktop/My_Code/Webpage---Webdev.-Sem-1/contact.html">Contact Us</a></li> 
 </ul>
