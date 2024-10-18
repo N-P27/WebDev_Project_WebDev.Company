@@ -1,0 +1,125 @@
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  /* Change the link color to #111 (black) on hover */
+  li a:hover {
+    background-color: #111;
+  }
+  .active {
+    background-color: #04AA6D;
+  }  
+
+
+
+
+/* This is redundant css code ~ Alex */
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover {
+    background-color: #111;
+  }
+
+
+
+  .nav-link 
+{ 
+    display: inline-block;
+    width: 200px;
+    height: 55px;
+
+    color: rgb(249, 247, 247);
+
+    text-align: center;
+    line-height: 55px;
+
+    text-decoration: none;
+}
+
+
+logo 
+{
+    width: 220px;
+    height: 10px;
+}
+
+
+h1
+{ 
+
+    text-align: center;
+    
+}
+h2
+{
+    text-align: center;
+}
+
+
+
+  p { 
+    padding: 8px;
+    border-radius: 10px;
+    text-align: center; 
+    width : "600";
+    height : "450";
+    background-color: rgb(12, 163, 238); 
+    font-size:1.5rem;
+}
+
+/* Container for the entire layout */
+.content-container {
+    display: flex; /* Use flexbox to align items horizontally */
+    justify-content: space-between; /* Space items apart */
+    align-items: center; /* Center items vertically */
+    padding: 20px; /* Add some padding */
+}
+
+/* Styling for the image */
+.image-container img {
+    max-width: 100%; /* Make sure the image is responsive */
+    height: auto; /* Maintain the aspect ratio */
+    width: 50vw; /* Take up 50% of the viewport width */
+}
+
+/* Styling for the text */
+.text-container {
+    width: 50vw; /* Take up 50% of the viewport width */
+    padding: 20px; /* Add some padding around the text */
+    font-size: 1.5rem;
+}
+
