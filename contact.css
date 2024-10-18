@@ -42,32 +42,65 @@ li a:hover
     text-decoration: none;
 }
 
-#Logo 
-{
-    width: 220px;
-    height: 10px;
-}
+
 
 
 /* Body */
 #h1
 { 
-    text-align: center;  
+    text-align: center;
+    position: relative;  
 }
 
-
-body
+img
 {
-    background-color:   ;
+    position: fixed;
+    ali
 }
 
 
-fieldset
+
+/* Css for Form */
+.formel
 {
-    width: 500px;
-    height: 375px;
+    width: 45%;
 }
 
+.formel input,.formel textarea
+{
+    width: 100%; 
+    padding: 15px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1)
+}
+
+.formel textarea
+{
+    height: 200px;
+}
+
+button 
+{
+    background-color: #007BFF; 
+    color: white;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover 
+{
+    background-color: #0056b3;
+}
+
+.formbox 
+{
+    margin-top: 20px;
+}
 
 /* Footer */
 footer
