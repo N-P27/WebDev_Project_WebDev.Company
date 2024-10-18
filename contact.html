@@ -1,30 +1,37 @@
 <!DOCTYPE html>
 <html> 
+    
     <head>
         <meta charset = "utf-8"/>
         <title>Contact Page</title>
-        <link rel = "stylesheet" href ="css/contact.css">
+        <link rel = "stylesheet" href ="contact.css">
     </head>
+    
     <body>
-        <nav id = "topnav">
-             <a id = "Logo" class = "nav-link" href="Main_page.html">Wheels on fire</a>
-             <a class = "nav-link" href="About.html">About</a>
-             <a class = "nav-link" href="contact.html">Contact</a>
-             <a id = "cart" class = "nav-link" href="#">Cart</a>
-        </nav>
+        <header>
+            <strong>
+            <ul>
+             <nav id = "topnav">
+                <li><a id = "Logo" class = "nav-link" href="Main_page.html">Main</a></li>
+                <li><a class = "nav-link" href="About.html">About</a></li>
+                <li><a class = "nav-link" href="contact.html">Contact</a>
+             </nav>
+        </ul>   
+        </header>
 
         <h1>Contact Us!</h1>
-        <br><br>
+        <br>
       
         <h2> Hi! If you have any inquiries please use the Inquiry form on this page!</h2>
 
         <FORM>
             <fieldset> <legend>Inquiry Form</legend>
+                <br>
 
-                Name : <input type="text"> <br>
-                Email : <input type="text"> <br>
-                Contact No. <input type="text"> <br>
-                Reason for Inquiry <input list = "Inquiries">
+                <input type="text" placeholder = "Name"> <br>
+                <input type="text" placeholder = "Email"> <br>
+                <input type="text" placeholder = "Contact.No"> <br>
+                <input list = "Inquiries" placeholder = "Reason for Inquiry">
 
                 <datalist id="Inquiries">
                     <option value = "Specific Brand information">
@@ -38,18 +45,29 @@
                 <textarea id = "OtherText"
                           name = "OtherText"
                           rows = "10"
-                          cols = "50">
+                          cols = "75">
                 </textarea>
                 <br>
-                    <button>submit</button>
+                    <button>Submit</button>
+                <br>
+                <br>
             </fieldset>
+            <br>
+            <br>
         </FORM>
+        </strong>
     </body>
+
+    <strong>
     <footer>
-        <a href = "#">Instagram</a>
-        <a href = "#">Facebook</a>
-        <a href = "#">VSCO</a>
-        <a href = "#">X</a>
+
+        <nav id = "Bottomlabel">
+         <a class = "footerlabels" href = "#">Instagram</a>
+         <a class = "footerlabels" href = "#">Facebook</a>
+         <a class = "footerlabels" href = "#">VSCO</a>
+         <a class = "footerlabels" href = "#">X</a>
+        </nav>
 
     </footer>
+    </strong>
 </html>
