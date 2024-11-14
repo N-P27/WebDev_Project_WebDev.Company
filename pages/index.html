@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Your Reservation</title>
+    <link rel="stylesheet" href="css/reservation.css">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header class="header-container">
+        <h1 class="site-title">Wheels on Fire</h1>
+        <ul id="topnav">
+            <li><a class="nav-link" href="../index.html">Home</a></li>
+            <li><a class="nav-link" href="about.html">About</a></li>
+            <li><a class="nav-link" href="contact.html">Contact</a></li>
+            <li><a class="nav-link active" href="reservation.html">Book Reservation</a></li>
+        </ul>
+    </header>
+
+    <!-- Main Content Section -->
+    <div class="container">
+        <div class="form-container">
+            <h2>Book Your Reservation</h2>
+            <p>Please fill in the following information to reserve your spot. Fields marked with * are required.</p>
+
+            <form action="#">
+                <div class="formel">
+                    <label for="name" class="red-text">Name*:</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                </div>
+
+                <div class="formel">
+                    <label for="email" class="red-text">Email*:</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                </div>
+
+                <div class="formel">
+                    <label for="service" class="red-text">Service Type*:</label>
+                    <select id="service" name="service" required>
+                        <option value="BS">Basic Show</option>
+                        <option value="PS">Premium Show</option>
+                        <option value="VPS">VIP show</option>
+                    </select>
+                </div>
+
+                <div class="formel">
+                    <label class="red-text">Additional Preferences:</label>
+                    <div class="checkbox-group">
+                        <label><input type="checkbox" name="vip"> VIP Service</label>
+                        <label><input type="checkbox" name="parking"> Reserved Parking</label>
+                    </div>
+                </div>
+
+                <div class="formel">
+                    <label class="red-text">Preferred Time Slot*:</label>
+                    <div class="radio-group">
+                        <label><input type="radio" name="time" value="morning" required> Morning</label>
+                        <label><input type="radio" name="time" value="afternoon" required> Afternoon</label>
+                        <label><input type="radio" name="time" value="evening" required> Evening</label>
+                    </div>
+                </div>
+
+                <button type="submit">Submit Reservation</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer class="footer-container">
+        <p class="footer-title">Follow us on social media</p>
+        <nav>
+            <a class="footerlabels" href="#">Instagram</a>
+            <a class="footerlabels" href="#">Facebook</a>
+            <a class="footerlabels" href="#">VSCO</a>
+            <a class="footerlabels" href="#">X</a>
+        </nav>
+        <p>&copy; 2024 Wheels on Fire</p>
+    </footer>
+
+</body>
+</html>
