@@ -1,0 +1,190 @@
+/* Reset margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Ensure full height for the page */
+html, body {
+    flex-direction: column;
+    font-family: Arial, sans-serif;
+}
+
+/* Header styling with a red bar */
+.header-container {
+    background-color: #D32F2F;
+    padding: 20px;
+    text-align: center;
+}
+
+.site-title {
+    color: #FFFFFF;
+    font-size: 32px;
+    margin: 0;
+}
+
+/* Navigation menu styling */
+#topnav {
+    margin-top: 10px; /* makes navigation menu not too close to "Wheels on fire logo" */
+}
+
+#topnav li {
+    display: inline;
+    margin: 10px; /* space out nav buttons */
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+    padding: 8px 12px;
+    font-size: 18px;
+}
+
+.nav-link:hover, .active {
+    background-color: #B71C1C;
+    border-radius: 5px;
+}
+
+/* Main content container */
+.container {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+/* Form styling */
+.form-container {
+    width: 60%;
+    padding: 30px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-container h2 {
+    text-align: center;
+    color: #D32F2F;
+    font-size: 28px;
+}
+
+.form-container p {
+    text-align: center;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.formel {
+    margin-bottom: 25px;
+}
+
+/* Styling input fields (bubble boxes) */
+.formel input, .formel select, .formel textarea {
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0;
+    border: 2px solid #D32F2F;
+    border-radius: 25px; /* Bubble effect */
+    background-color: #fff;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+.formel input:focus, .formel select:focus {
+    outline: none;
+    border-color: #007BFF; /* Blue border on focus */
+}
+
+/* Checkbox and radio button styling */
+.formel input[type="checkbox"], .formel input[type="radio"] {
+    margin-right: 10px;
+    transform: scale(1.2); /* Make checkboxes larger */
+    margin-left: 5px;
+    vertical-align: middle; /* Align checkboxes/radio buttons with text */
+}
+
+/* Checkbox and radio button container alignment */
+.checkbox-group, .radio-group {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap; /* Allow the labels to wrap onto a new line if necessary */
+    margin-top: 10px;
+    align-items: center; /* Center items vertically */
+}
+
+/* Align checkbox/radio label to center with their respective input */
+.checkbox-group label, .radio-group label {
+    display: flex;
+    align-items: center; /* Vertically center the text and checkbox */
+    font-size: 16px;
+}
+
+/* Adjust the space between the checkbox/radio and label */
+.checkbox-group input[type="checkbox"], .radio-group input[type="radio"] {
+    margin: 0; /* removes extra margin */
+    margin-right: 10px;
+}
+
+/* Align "Morning" radio button with checkboxes */
+.radio-group label:first-child {
+    margin-left: 14px; /* Push "Morning" to the right to align with checkboxes */
+}
+
+/* gives certain text the red color */
+.red-text {
+    color: #D32F2F; /* Red color */
+    font-weight: bold;
+    font-size: 18px;
+}
+
+/* Submit button styling */
+button {
+    background-color: #007BFF;
+    color: white;
+    padding: 15px;
+    border: none;
+    border-radius: 25px; /* Rounded button */
+    cursor: pointer;
+    font-size: 18px;
+    width: 100%;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #4CAF50; /* Green on hover */
+}
+
+/* footer */
+.footer-container {
+    background-color: #D32F2F;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+    position: relative;
+    bottom: 0;
+}
+
+.footer-title {
+    color: white;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+/* footer links */
+.footerlabels {
+    color: #f9f9f9;
+    font-size: 18px;
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+.footerlabels:hover {
+    color: #FFCDD2;
+}
+
+.footer-container p {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #f2f2f2;
+} 
