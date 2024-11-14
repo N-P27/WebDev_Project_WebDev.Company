@@ -1,32 +1,40 @@
-/* Reset margin and padding */
+/* resets the pages default margin and padding */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Ensure full height for the page */
+/* gives the page full height */
 html, body {
     flex-direction: column;
     font-family: Arial, sans-serif;
 }
 
-/* Header styling with a red bar */
+/* gives the header a blackish color */
 .header-container {
-    background-color: #D32F2F;
+    background-color: #333;
     padding: 20px;
-    text-align: center;
+    text-align: left;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; 
 }
 
 .site-title {
     color: #FFFFFF;
     font-size: 32px;
-    margin: 0;
+    margin-right: 20px;
 }
 
-/* Navigation menu styling */
+/* navigation menu */
 #topnav {
-    margin-top: 10px; /* makes navigation menu not too close to "Wheels on fire logo" */
+    margin-top: 20px; /* makes the nav menu not too close to the logo */
+    display: flex;
+    margin-bottom: 15px;
 }
 
 #topnav li {
@@ -42,18 +50,17 @@ html, body {
 }
 
 .nav-link:hover, .active {
-    background-color: #B71C1C;
+    background-color: aquamarine;
     border-radius: 5px;
 }
 
-/* Main content container */
 .container {
     padding: 20px;
     display: flex;
     justify-content: center;
 }
 
-/* Form styling */
+/* form */
 .form-container {
     width: 60%;
     padding: 30px;
@@ -64,7 +71,7 @@ html, body {
 
 .form-container h2 {
     text-align: center;
-    color: #D32F2F;
+    color: black;
     font-size: 28px;
 }
 
@@ -78,13 +85,13 @@ html, body {
     margin-bottom: 25px;
 }
 
-/* Styling input fields (bubble boxes) */
+/* bubble boxes */
 .formel input, .formel select, .formel textarea {
     width: 100%;
     padding: 15px;
     margin: 10px 0;
-    border: 2px solid #D32F2F;
-    border-radius: 25px; /* Bubble effect */
+    border: 2px solid black;
+    border-radius: 25px;
     background-color: #fff;
     font-size: 16px;
     transition: all 0.3s ease;
@@ -92,58 +99,58 @@ html, body {
 
 .formel input:focus, .formel select:focus {
     outline: none;
-    border-color: red; /* Blue border on focus */
+    border-color: aquamarine; /* gives aquamarine border on select */
 }
 
-/* Checkbox and radio button styling */
+/* checkbox and radio buttons */
 .formel input[type="checkbox"], .formel input[type="radio"] {
     margin-right: 10px;
-    transform: scale(1.2); /* Make checkboxes larger */
+    transform: scale(1.2);
     margin-left: 5px;
-    vertical-align: middle; /* Align checkboxes/radio buttons with text */
+    vertical-align: middle; 
 }
 
-/* Checkbox and radio button container alignment */
+/* alines the checkboxes and radio buttons */
 .checkbox-group, .radio-group {
     display: flex;
     gap: 10px;
-    flex-wrap: wrap; /* Allow the labels to wrap onto a new line if necessary */
+    flex-wrap: wrap;
     margin-top: 10px;
-    align-items: center; /* Center items vertically */
+    align-items: center; 
 }
 
-/* Align checkbox/radio label to center with their respective input */
+/* moves the radio/checkboxes to be in line with their text */
 .checkbox-group label, .radio-group label {
     display: flex;
-    align-items: center; /* Vertically center the text and checkbox */
+    align-items: center;
     font-size: 16px;
 }
 
-/* Adjust the space between the checkbox/radio and label */
+/* adjusts the space between the checkbox and radio buttons */
 .checkbox-group input[type="checkbox"], .radio-group input[type="radio"] {
-    margin: 0; /* removes extra margin */
+    margin: 0;
     margin-right: 10px;
 }
 
-/* Align "Morning" radio button with checkboxes */
+/* moves morning text to align with checkboxes */
 .radio-group label:first-child {
-    margin-left: 14px; /* Push "Morning" to the right to align with checkboxes */
+    margin-left: 14px;
 }
 
-/* gives certain text the red color */
+/* gives selected text the black color */
 .red-text {
-    color: #D32F2F; /* Red color */
+    color: black;
     font-weight: bold;
     font-size: 18px;
 }
 
-/* Submit button styling */
+/* submit button */
 button {
-    background-color: red;
+    background-color: #007BFF;
     color: white;
     padding: 15px;
     border: none;
-    border-radius: 25px; /* Rounded button */
+    border-radius: 25px;
     cursor: pointer;
     font-size: 18px;
     width: 100%;
@@ -151,40 +158,39 @@ button {
 }
 
 button:hover {
-    background-color: #4CAF50; /* Green on hover */
+    background-color: #4CAF50; /* green color on hover */
 }
 
 /* footer */
 .footer-container {
-    background-color: #D32F2F;
+    background-color: aquamarine;
     color: white;
-    text-align: center;
-    padding: 20px;
+    text-align: left;
+    padding: 10px;
     width: 100%;
     position: relative;
     bottom: 0;
 }
 
 .footer-title {
-    color: white;
+    color: black;
     font-size: 24px;
     margin-bottom: 10px;
 }
 
 /* footer links */
 .footerlabels {
-    color: #f9f9f9;
+    color: black;
     font-size: 18px;
     text-decoration: none;
-    margin: 0 15px;
 }
 
 .footerlabels:hover {
-    color: #FFCDD2;
+    color: #e21710;
 }
 
 .footer-container p {
     margin-top: 10px;
     font-size: 14px;
-    color: #f2f2f2;
+    color: black;
 } 
