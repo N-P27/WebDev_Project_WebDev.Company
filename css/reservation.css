@@ -1,4 +1,201 @@
-<<<<<<< HEAD
+/* resets the pages default margin and padding */
+* 
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* gives the page full height */
+html, body {
+    flex-direction: column;
+    font-family: Arial, sans-serif;
+}
+
+/* gives the header a blackish color */
+.header-container {
+    background-color: #333;
+    padding: 20px;
+    text-align: left;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; 
+}
+
+.site-title {
+    color: #FFFFFF;
+    font-size: 32px;
+    margin-right: 20px;
+}
+
+/* navigation menu */
+#topnav {
+    margin-top: 20px; /* makes the nav menu not too close to the logo */
+    display: flex;
+    margin-bottom: 15px;
+}
+
+#topnav li {
+    display: inline;
+    margin: 10px; /* space out nav buttons */
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+    padding: 8px 12px;
+    font-size: 18px;
+}
+
+.nav-link:hover, .active {
+    background-color: aquamarine;
+    border-radius: 5px;
+}
+
+.container {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+/* form */
+.form-container {
+    width: 60%;
+    padding: 30px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-container h2 {
+    text-align: center;
+    color: black;
+    font-size: 28px;
+}
+
+.form-container p {
+    text-align: center;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.formel {
+    margin-bottom: 25px;
+}
+
+/* bubble boxes */
+.formel input, .formel select, .formel textarea {
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0;
+    border: 2px solid black;
+    border-radius: 25px;
+    background-color: #fff;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+.formel input:focus, .formel select:focus {
+    outline: none;
+    border-color: aquamarine; /* gives aquamarine border on select */
+}
+
+/* checkbox and radio buttons */
+.formel input[type="checkbox"], .formel input[type="radio"] {
+    margin-right: 10px;
+    transform: scale(1.2);
+    margin-left: 5px;
+    vertical-align: middle; 
+}
+
+/* alines the checkboxes and radio buttons */
+.checkbox-group, .radio-group {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    align-items: center; 
+}
+
+/* moves the radio/checkboxes to be in line with their text */
+.checkbox-group label, .radio-group label {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+}
+
+/* adjusts the space between the checkbox and radio buttons */
+.checkbox-group input[type="checkbox"], .radio-group input[type="radio"] {
+    margin: 0;
+    margin-right: 10px;
+}
+
+/* moves morning text to align with checkboxes */
+.radio-group label:first-child {
+    margin-left: 14px;
+}
+
+/* gives selected text the black color */
+.red-text {
+    color: black;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+/* submit button */
+button {
+    background-color: #007BFF;
+    color: white;
+    padding: 15px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 18px;
+    width: 100%;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #4CAF50; /* green color on hover */
+}
+
+/* footer */
+.footer-container {
+    background-color: aquamarine;
+    color: white;
+    text-align: left;
+    padding: 10px;
+    width: 100%;
+    position: relative;
+    bottom: 0;
+}
+
+.footer-title {
+    color: black;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+/* footer links */
+.footerlabels {
+    color: black;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.footerlabels:hover {
+    color: #e21710;
+}
+
+.footer-container p {
+    margin-top: 10px;
+    font-size: 14px;
+    color: black;
+} 
+
 /* resets the pages default margin and padding */
 * {
     margin: 0;
@@ -195,201 +392,4 @@ button:hover {
     font-size: 14px;
     color: black;
 } 
-=======
-/* resets the pages default margin and padding */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 
-/* gives the page full height */
-html, body {
-    flex-direction: column;
-    font-family: Arial, sans-serif;
-}
-
-/* gives the header a blackish color */
-.header-container {
-    background-color: #333;
-    padding: 20px;
-    text-align: left;
-}
-
-.header-content {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start; 
-}
-
-.site-title {
-    color: #FFFFFF;
-    font-size: 32px;
-    margin-right: 20px;
-}
-
-/* navigation menu */
-#topnav {
-    margin-top: 20px; /* makes the nav menu not too close to the logo */
-    display: flex;
-    margin-bottom: 15px;
-}
-
-#topnav li {
-    display: inline;
-    margin: 10px; /* space out nav buttons */
-}
-
-.nav-link {
-    color: white;
-    text-decoration: none;
-    padding: 8px 12px;
-    font-size: 18px;
-}
-
-.nav-link:hover, .active {
-    background-color: aquamarine;
-    border-radius: 5px;
-}
-
-.container {
-    padding: 20px;
-    display: flex;
-    justify-content: center;
-}
-
-/* form */
-.form-container {
-    width: 60%;
-    padding: 30px;
-    background-color: #f9f9f9;
-    border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-}
-
-.form-container h2 {
-    text-align: center;
-    color: black;
-    font-size: 28px;
-}
-
-.form-container p {
-    text-align: center;
-    font-size: 16px;
-    margin-bottom: 20px;
-}
-
-.formel {
-    margin-bottom: 25px;
-}
-
-/* bubble boxes */
-.formel input, .formel select, .formel textarea {
-    width: 100%;
-    padding: 15px;
-    margin: 10px 0;
-    border: 2px solid black;
-    border-radius: 25px;
-    background-color: #fff;
-    font-size: 16px;
-    transition: all 0.3s ease;
-}
-
-.formel input:focus, .formel select:focus {
-    outline: none;
-    border-color: aquamarine; /* gives aquamarine border on select */
-}
-
-/* checkbox and radio buttons */
-.formel input[type="checkbox"], .formel input[type="radio"] {
-    margin-right: 10px;
-    transform: scale(1.2);
-    margin-left: 5px;
-    vertical-align: middle; 
-}
-
-/* alines the checkboxes and radio buttons */
-.checkbox-group, .radio-group {
-    display: flex;
-    gap: 10px;
-    flex-wrap: wrap;
-    margin-top: 10px;
-    align-items: center; 
-}
-
-/* moves the radio/checkboxes to be in line with their text */
-.checkbox-group label, .radio-group label {
-    display: flex;
-    align-items: center;
-    font-size: 16px;
-}
-
-/* adjusts the space between the checkbox and radio buttons */
-.checkbox-group input[type="checkbox"], .radio-group input[type="radio"] {
-    margin: 0;
-    margin-right: 10px;
-}
-
-/* moves morning text to align with checkboxes */
-.radio-group label:first-child {
-    margin-left: 14px;
-}
-
-/* gives selected text the black color */
-.red-text {
-    color: black;
-    font-weight: bold;
-    font-size: 18px;
-}
-
-/* submit button */
-button {
-    background-color: #007BFF;
-    color: white;
-    padding: 15px;
-    border: none;
-    border-radius: 25px;
-    cursor: pointer;
-    font-size: 18px;
-    width: 100%;
-    transition: background-color 0.3s ease;
-}
-
-button:hover {
-    background-color: #4CAF50; /* green color on hover */
-}
-
-/* footer */
-.footer-container {
-    background-color: aquamarine;
-    color: white;
-    text-align: left;
-    padding: 10px;
-    width: 100%;
-    position: relative;
-    bottom: 0;
-}
-
-.footer-title {
-    color: black;
-    font-size: 24px;
-    margin-bottom: 10px;
-}
-
-/* footer links */
-.footerlabels {
-    color: black;
-    font-size: 18px;
-    text-decoration: none;
-}
-
-.footerlabels:hover {
-    color: #e21710;
-}
-
-.footer-container p {
-    margin-top: 10px;
-    font-size: 14px;
-    color: black;
-} 
->>>>>>> 35face98c6e4d9bb58ec6d3787422ba4e15467a2
