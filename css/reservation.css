@@ -51,7 +51,7 @@ html, body {
 }
 
 .nav-link:hover, .active {
-    background-color: aquamarine;
+    background-color: #04AA6D;  
     border-radius: 5px;
 }
 
@@ -248,7 +248,7 @@ html, body {
 }
 
 .nav-link:hover, .active {
-    background-color: aquamarine;
+    background-color:#04AA6D;
     border-radius: 5px;
 }
 
