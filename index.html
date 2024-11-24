@@ -1,70 +1,82 @@
 <!DOCTYPE html>
 
-<html lang = "en">
-    <head>
-        <meta charset = "utf-8"/>
-        <meta name = "viewport" content = "width=device-width, initial scale = 1.0">
-        <meta name = "Front page of John o'Reilly's Website that showscases his different cars and allows customers to make car reservations">
-        <link rel = "stylesheet" type = "text/css" href = ".\css\main_page_style.css">
+<html lang="en">
 
-        <title>Wheels On Fire Official Website</title>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial scale = 1.0">
+    <meta
+        name="Front page of John o'Reilly's Website that showscases his different cars and allows customers to make car reservations">
+    <link rel="stylesheet" type="text/css" href=".\css\main_page_style.css">
 
-
-    </head>
-    
-    <body>  
-        <header>
-            <nav id = "topnav"> 
-                <ul>
-                    <li><a id = "logo" class = "nav-link"  href="index.html">Wheels on Fire </a></li>
-                    <li><a class = "nav-link"  href=".\pages\About.html" >About Us </a></li>
-                    <li><a class = "nav-link" href=".\pages\contact.html" >Contact Us </a></li>
-                    <li><a class=  "nav-link" href=".\pages\gallery.html">Gallery</a></li>
-                    <li><a class=  "nav-link active" href=".\pages\reservation.html">Book Reservation</a></li>
-                </ul>
-            </nav>
-        </header>
-
-        <h1>Our cars of the week!</h1>
+    <title>Wheels On Fire Official Website</title>
 
 
-        <div class = "row">
+</head>
 
-            <div class = "col" id = "car_of_the_day_image">
-                <img id="img_left" class="img_left" src ="img/car.jpg" alt="car" width="560" height="400">
-            </div>
+<body>
+    <header>
+        <nav id="topnav">
+            <ul>
+                <li><a id="logo" class="nav-link" href="index.html">Wheels on Fire </a></li>
+                <li><a class="nav-link" href=".\pages\About.html">About Us </a></li>
+                <li><a class="nav-link" href=".\pages\contact.html">Contact Us </a></li>
+                <li><a class="nav-link active" href=".\pages\reservation.html">Book Reservation</a></li>
+                <li><a class="nav-link" href=".\pages\gallery.html">Gallery</a></li>
+            </ul>
+        </nav>
+    </header>
 
-            <div class = "col" id = "car_of_the_day_text">
+    <h1>Our cars of the week!</h1>
 
-                <p class = "car_description" id = "car_of_the_day_name">
-                    Porshe 911 2024
-                </p>
 
-                <p class = "car_description" id = "car_of_the_day_fact">
-                    It is the fastest Porshe ever made!
-                </p>
+    <div class="row">
 
-                <p class = "car_description" id = "specs"> 
-                    Power: <span class = "car_specs" id = "car_power_id"> 379 - 640 hp</span> 
-                    <br>Aceleration 0 - 100 kmph: <span class = "car_specs" id = "car_aceleration_id"> 3.5 sec</span>
-                    <br>Cars sold: <span class = "car_specs" id = "cars_sold"> 50,146</span>
-                    <br>Price range: <span class = "car_specs" id = "car_price"> $116,050 - $223,650</span>
-                </p>
-            </div>
-
+        <div class="col" id="car_of_the_day_image">
+            <img id="img_left" class="img_left" src="img/car.jpg" alt="car" width="560" height="400">
         </div>
 
+        <div class="col" id="car_of_the_day_text">
 
-        <div class = "row">
-            <div class = "col" id = "next_car_button_div">
-                <button id = "next_car_button" onclick="nextCar()">
-                    Next!
-                </button>
-            </div>
+            <p class="car_description" id="car_of_the_day_name">
+                Porshe 911 2024
+            </p>
+
+            <p class="car_description" id="car_of_the_day_fact">
+                It is the fastest Porshe ever made!
+            </p>
+
+            <p class="car_description" id="specs">
+                Power: <span class="car_specs" id="car_power_id"> 379 - 640 hp</span>
+                <br>Aceleration 0 - 100 kmph: <span class="car_specs" id="car_aceleration_id"> 3.5 sec</span>
+                <br>Cars sold: <span class="car_specs" id="cars_sold"> 50,146</span>
+                <br>Price range: <span class="car_specs" id="car_price"> $116,050 - $223,650</span>
+            </p>
         </div>
 
+    </div>
 
-        <script type = "text/javascript" src = ".\java_script\index.js"></script>
-    </body>
+
+    <div class="row">
+        <div class="col" id="next_car_button_div">
+            <button id="next_car_button" onclick="nextCar()">
+                Next!
+            </button>
+        </div>
+    </div>
+
+
+    <script type="text/javascript" src=".\java_script\index.js"></script>
+    <footer class="footer-container">
+        <div id="bottomlabel">
+            <a href="#" class="footerlabels">Instagram</a>
+            <a href="#" class="footerlabels">Facebook</a>
+            <a href="#" class="footerlabels">VSCO</a>
+            <a href="#" class="footerlabels">X</a>
+        </div>
+        <p>&copy; 2024 Wheels on Fire</p>
+    </footer>
+
+</body>
 
 </html>
