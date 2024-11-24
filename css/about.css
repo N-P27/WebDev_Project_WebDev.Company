@@ -75,23 +75,23 @@ h2
 
 /* Container for the entire layout */
 .content-container {
-    display: flex; /* Use flexbox to align items horizontally */
-    justify-content: space-between; /* Space items apart */
-    align-items: center; /* Center items vertically */
-    padding: 20px; /* Add some padding */
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 20px; 
 }
 
 /* Styling for the image */
 .image-container img {
     max-width: 100%; /* Make sure the image is responsive */
-    height: auto; /* Maintain the aspect ratio */
-    width: 50vw; /* Take up 50% of the viewport width */
+    height: auto; 
+    width: 50vw; 
 }
 
 /* Styling for the text */
 .text-container {
     width: 50vw; /* Take up 50% of the viewport width */
-    padding: 20px; /* Add some padding around the text */
+    padding: 20px;
     font-size: 1.5rem;
 }
 
