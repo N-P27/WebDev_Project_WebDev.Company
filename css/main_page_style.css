@@ -33,9 +33,6 @@ ul {
     text-decoration: none;
 }
 
-.active {
-    background-color: #555;
-}
 
 li a:hover {
     background-color: #111;
