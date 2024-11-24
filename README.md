@@ -1,8 +1,8 @@
 # Collaborators
-Gracjan - Index Page HTML, Book reservation full
-Alex - About
-Oleksandr - Index Page CSS + JavaScript
-Nathan - Contact
+Gracjan - Index Page ~ HTML, Reservation page
+Alex - About Page
+Oleksandr - Index Page ~ CSS, Gallery Page + JavaScript
+Nathan - Contact Page
 
 # Descriptions
 A website that showcases John O Reilly's Car collection that 
