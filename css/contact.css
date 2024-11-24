@@ -1,20 +1,50 @@
+/* resets the pages default margin and padding */
+* 
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 /* Header */
-ul
+ul 
 {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
     background-color: #333;
+    position: sticky;
 }
 
-li a
+.nav-link 
+{ 
+    display: inline-block;
+    width: 200px;
+    height: 55px;
+
+    color: rgb(249, 247, 247);
+
+    text-align: center;
+    line-height: 55px;
+
+    text-decoration: none;
+}
+
+li a:hover 
+{
+    background-color: #111;
+}
+
+li 
 {
     float: left;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
+}
+
+.nav-link:hover, .active 
+{
+    background-color: #aa0404;
+    border-radius: 5px;
 }
 
 /* When you hover over the buttons it will change the the button color to #111 on hover */
@@ -25,7 +55,7 @@ li a:hover
 
 .active
 {
-    background-color: #04AA6D;
+    background-color: #aa0404;
 }
 
 .nav-link
@@ -41,8 +71,6 @@ li a:hover
 
     text-decoration: none;
 }
-
-
 
 
 /* Body */

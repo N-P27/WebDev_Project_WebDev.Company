@@ -1,62 +1,25 @@
-ul {
+/* resets the pages default margin and padding */
+* 
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Header */
+
+/* Navigation Menu */
+ul 
+{
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
     background-color: #333;
-  }
-  
-  li {
-    float: left;
-  }
-  
-  li a{
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-  }
-  
-  /* Change the link color to #111 (black) on hover */
-  li a:hover {
-    background-color: #111;
-  }
-  .active {
-    background-color: #04AA6D;
-  }  
+    position: sticky;
+}
 
-
-
-
-
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333;
-  }
-  
-  li {
-    float: left;
-  }
-  
-  li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-  }
-  
-  li a:hover {
-    background-color: #111;
-  }
-
-
-
-  .nav-link 
+.nav-link 
 { 
     display: inline-block;
     width: 200px;
@@ -70,11 +33,20 @@ ul {
     text-decoration: none;
 }
 
-
-logo 
+li a:hover 
 {
-    width: 220px;
-    height: 10px;
+    background-color: #111;
+}
+
+li 
+{
+    float: left;
+}
+
+.nav-link:hover, .active 
+{
+    background-color: #aa0404;
+    border-radius: 5px;
 }
 
 
@@ -122,4 +94,54 @@ h2
     padding: 20px; /* Add some padding around the text */
     font-size: 1.5rem;
 }
+
+/* Footer */
+footer
+{
+    width: 100%;
+    height: 100%;
+
+    position: relative;
+    top: 0;
+    left: 0;
+
+    background-color: rgb(2, 0, 0);
+   
+    font-family: Arial, sans-serif;
+}
+
+
+#bottomlabel
+{
+    position : relative;
+}
+
+#bottomlabel:hover
+{
+    background-color: #111; 
+}
+
+
+.footerlabels 
+{
+    display: inline;
+    width: 20px;
+    height: 10px;
+    padding: 20px;
+    
+    border-color: antiquewhite;
+    border-bottom: 10px;
+    border-top: 10px;
+    border-left: 10px;
+    border-right: 10px;
+
+    color: white;
+    font-size: 30px;
+
+    text-align: center;
+    line-height: 55px;
+
+    text-decoration: none;
+}
+
 
