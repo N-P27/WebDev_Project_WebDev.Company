@@ -1,3 +1,12 @@
+/* resets the pages default margin and padding */
+* 
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Header */
 ul 
 {
     list-style-type: none;
@@ -32,41 +41,52 @@ li
     float: left;
 }
 
-.nav-link:hover, .active {
-    background-color: #04AA6D;
+.nav-link:hover, .active 
+{
+    background-color: #aa0404;
     border-radius: 5px;
 }
 
-
-.img_left{
+/* Body */
+.img_left
+{
     float: left;
     border-radius: 50px;
 }
 
-h2{
+h2
+{
     max-width: fit-content;
     margin-left: auto;
     margin-right: auto;
 }
 
-footer{
+footer
+{
     margin-top: auto;
 }
 
-#right_text{
+#right_text
+{
     float: right;
     width: 50%;
     border-radius:10px;
     padding:15px;
-    background-color: aquamarine;
+    background-color: #aa0404;
 }
 
-footer{
+footer
+{
     position: absolute; 
     bottom: 0; 
     left: 0; 
     width: 100%;
     border-radius:10px;
     padding:15px;
-    background-color: aquamarine;
+    background-color: #aa0404;
+}
+
+p
+{
+    color: aliceblue;
 }
