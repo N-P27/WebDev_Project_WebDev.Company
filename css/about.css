@@ -1,16 +1,15 @@
 /* resets the pages default margin and padding */
-* 
-{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+
 /* Header */
 
 /* Navigation Menu */
-ul 
-{
+ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -19,8 +18,7 @@ ul
     position: sticky;
 }
 
-.nav-link 
-{ 
+.nav-link {
     display: inline-block;
     width: 200px;
     height: 55px;
@@ -33,102 +31,93 @@ ul
     text-decoration: none;
 }
 
-li a:hover 
-{
+li a:hover {
     background-color: #111;
 }
 
-li 
-{
+li {
     float: left;
 }
 
-.active 
-{
-    background-color: #aa0404;
-    border-radius: 5px;
-}
 
 
-h1
-{ 
+h1 {
 
     text-align: center;
-    
+
 }
-h2
-{
+
+h2 {
     text-align: center;
 }
 
 
 
-  p { 
+p {
     padding: 8px;
     border-radius: 10px;
-    text-align: center; 
-    width : "600";
-    height : "450";
-    background-color: rgb(12, 163, 238); 
-    font-size:1.5rem;
+    text-align: center;
+    width: "600";
+    height: "450";
+    background-color: rgb(12, 163, 238);
+    font-size: 1.5rem;
 }
 
-/* Container for the entire layout */
+
 .content-container {
-    display: flex; 
-    justify-content: space-between; 
-    align-items: center; 
-    padding: 20px; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
 }
 
-/* Styling for the image */
+/* Styling for image */
 .image-container img {
-    max-width: 100%; /* Make sure the image is responsive */
-    height: auto; 
-    width: 50vw; 
+    max-width: 100%;
+    height: auto;
+    width: 50vw;
 }
 
-/* Styling for the text */
+
 .text-container {
-    width: 50vw; /* Take up 50% of the viewport width */
+    width: 50vw;
     padding: 20px;
     font-size: 1.5rem;
 }
 
 /* Footer */
-footer
-{
+footer {
     width: 100%;
-    height: 100%;
+    height: 16.8%;
 
     position: relative;
     top: 0;
     left: 0;
 
     background-color: rgb(2, 0, 0);
-   
+
     font-family: Arial, sans-serif;
 }
 
 
-#bottomlabel
-{
-    position : relative;
+#bottomlabel {
+    position: relative;
 }
 
-#bottomlabel:hover
-{
-    background-color: #111; 
+#bottomlabel:hover {
+    background-color: #111;
 }
 
+.footerlabels:hover {
+    color: #e21710;
+}
 
-.footerlabels 
-{
+.footerlabels {
     display: inline;
     width: 20px;
     height: 10px;
     padding: 20px;
-    
+
     border-color: antiquewhite;
     border-bottom: 10px;
     border-top: 10px;
@@ -143,5 +132,3 @@ footer
 
     text-decoration: none;
 }
-
-
