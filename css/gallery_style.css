@@ -39,6 +39,11 @@ li a:hover
     background-color: #111;
 }
 
+.active
+{
+    background-color: #aa0404;
+}
+
 li 
 {
     float: left;

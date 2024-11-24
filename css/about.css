@@ -43,7 +43,7 @@ li
     float: left;
 }
 
-.nav-link:hover, .active 
+.active 
 {
     background-color: #aa0404;
     border-radius: 5px;

@@ -36,6 +36,11 @@ li a:hover
     background-color: #111;
 }
 
+.active
+{
+    background-color: #aa0404;
+}
+
 li 
 {
     float: left;
@@ -86,9 +91,10 @@ h1{
     font-size: 25px;
     font-weight: 600;
     width:100%;
-    background-color: aquamarine;
+    background-color: rgb(12, 163, 238); 
     border-radius: 25px;
     margin-left: 25px;
+    color:antiquewhite
 }
 
 

@@ -41,11 +41,6 @@ li
     float: left;
 }
 
-.nav-link:hover, .active 
-{
-    background-color: #aa0404;
-    border-radius: 5px;
-}
 
 /* When you hover over the buttons it will change the the button color to #111 on hover */
 li a:hover
