@@ -47,9 +47,6 @@ li {
     float: left;
 }
 
-.active {
-    background-color: #555; /* Highlight the active page */
-}
 
 /* form */
 .form-container {
@@ -330,7 +327,7 @@ html, body {
 /* submit button */
 button {
     background-color: #007BFF;
-    color: white;
+    color: black;
     padding: 15px;
     border: none;
     border-radius: 25px;
@@ -391,4 +388,4 @@ footer
     line-height: 55px;
 
     text-decoration: none;
-}
+}   
