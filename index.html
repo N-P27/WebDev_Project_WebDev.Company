@@ -1,43 +1,67 @@
 <html lang = "en">
     <head>
         <meta charset = "utf-8"/>
+        <meta name = "viewport" content = "width=device-width, initial scale = 1.0">
         <link rel = "stylesheet" type = "text/css" href = ".\css\main_page_style.css">
+
         <title>Wheels On Fire Official Website</title>
 
+
+    </head>
+    <body>  
         <header>
             <ul>
                 <nav id = "topnav"> 
-                <li> <a  id = "logo" class = "nav-link"  href="index.html">Wheels on Fire </a></li>
-                <li> <a  class = "nav-link"  href=".\pages\About.html" >About Us </a></li>
-                <li> <a  class = "nav-link" href=".\pages\contact.html" >Contact Us </a></li>
-                <li> <a  class=  "nav-link active" href=".\pages\reservation.html">Book Reservation</a></li>
+                    <li> <a  id = "logo" class = "nav-link"  href="index.html">Wheels on Fire </a></li>
+                    <li><a class = "nav-link"  href=".\pages\About.html" >About Us </a></li>
+                    <li><a  class = "nav-link" href=".\pages\contact.html" >Contact Us </a></li>
+                    <li><a class=  "nav-link active" href=".\pages\reservation.html">Book Reservation</a></li>
+                    <li><a class=  "nav-link active" href=".\pages\gallery.html">Gallery</a></li>
+                </nav>
 
-            </nav>
             </ul>
         </header>
-    </head>
-    <body>  
 
-        <h2>This is the car of the day!</h2>
+        <h1>Our cars of the week!</h1>
 
-        <img class = "img_left"src ="https://t4.ftcdn.net/jpg/06/30/88/31/360_F_630883181_X1hiBmWASzxb1Y3yHLhDFF0fLvSDq9mM.jpg" alt="car" width="560" height="400">
-        <p id="right_text">
-        The Car stated above is the porsche 911 2024 the fastest Porsche ever made
-        </p>
 
+        <div class = "row">
+
+            <div class = "col" id = "car_of_the_day_image">
+                <img id="img_left" class="img_left" src ="img/car.jpg" alt="car" width="560" height="400">
+            </div>
+
+            <div class = "col" id = "car_of_the_day_text">
+
+                <p class = "car_description" id = "car_of_the_day_name">
+                    Porshe 911 2024
+                </p>
+
+                <p class = "car_description" id = "car_of_the_day_fact">
+                    It is the fastest Porshe ever made!
+                </p>
+
+                <p class = "car_description" id = "specs"> 
+                    Power: <span class = "car_specs" id = "car_power_id"> 379 - 640 hp</span> 
+                    <br>Aceleration 0 - 100 kmph: <span class = "car_specs" id = "car_aceleration_id"> 3.5 sec</span>
+                    <br> Cars sold: <span class = "car_specs" id = "cars_sold"> 50,146</span>
+                    <br>Price range: <span class = "car_specs" id = "car_price"> $116,050 - $223,650</span>
+                </p>
+            </div>
+
+        </div>
+
+
+        <div class = "row">
+            <div class = "col" id = "next_car_button_div">
+                <button id = "next_car_button" onclick="nextCar()">
+                    Next!
+                </button>
+            </div>
+        </div>
+
+
+        <script type = "text/javascript" src = ".\java_script\index.js"></script>
     </body>
-    
-    <strong>
-    <footer>
-    
-            <nav id = "Bottomlabel">
-             <a class = "footerlabels" href = "#">Instagram</a>
-             <a class = "footerlabels" href = "#">Facebook</a>
-             <a class = "footerlabels" href = "#">VSCO</a>
-             <a class = "footerlabels" href = "#">X</a>
-            </nav>
-    
-    </footer>
-    </strong>
 
 </html>
