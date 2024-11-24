@@ -32,36 +32,129 @@ li
     float: left;
 }
 
-
-.img_left{
-    float: left;
-    border-radius: 50px;
+body{
+    font-family: "Calibri";
 }
 
-h2{
+header{
+    font-family: "Calibri";
+    font-size: 16px;
+}
+.img_left{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+h1{
     max-width: fit-content;
     margin-left: auto;
     margin-right: auto;
 }
 
-footer{
-    margin-top: auto;
-}
 
-#right_text{
-    float: right;
+.col{
     width: 50%;
-    border-radius:10px;
-    padding:15px;
-    background-color: aquamarine;
 }
 
-footer{
-    position: absolute; 
-    bottom: 0; 
-    left: 0; 
-    width: 100%;
-    border-radius:10px;
-    padding:15px;
-    background-color: aquamarine;
+.row{
+    display:flex;
+    margin: 5px;
 }
+
+
+#car_of_the_day_image{
+    width: 1200px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+#car_of_the_day_text{
+    text-align: center;
+    font-size: 25px;
+    font-weight: 600;
+    width:100%;
+    background-color: aquamarine;
+    border-radius: 25px;
+    margin-left: 25px;
+}
+
+
+#next_car_button_div{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#car_of_the_day_text_head{
+    margin-top:0px;
+}
+
+#next_car_button{
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 10px;
+    padding-bottom:10px;
+    border-style: none;
+    border-radius: 5px;
+    background-color: rgb(65, 65, 65);
+    color: white;
+    width: 100%;
+}
+
+#next_car_button:hover{
+    opacity: 0.8;
+    transition: opacity 0.15s;
+}
+
+#next_car_button:active{
+    opacity: 0.6;
+    transition: opacity 0.15s;
+}
+
+#car_of_the_day_fact{
+    font-weight: lighter;
+    font-style: italic;
+    height: 20%;
+}
+
+#specs{
+    text-align: left;
+    padding-left: 3%;
+}
+.car_specs{
+    text-align: right;
+    font-weight: 100;
+}
+
+
+
+
+@media (max-width: 600px) {
+    .row {
+        flex-direction: column;
+        align-items: center;
+    }
+    .col {
+        width: 100%;
+    }
+    #car_of_the_day_image {
+        width: 90%;
+        height: auto;
+    }
+    #car_of_the_day_text {
+        margin: 10px;
+        font-size: 18px;
+    }
+    #next_car_button {
+        width: auto;
+        padding: 10px 20px;
+    }
+}
+    
+
