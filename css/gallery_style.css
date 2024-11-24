@@ -39,19 +39,11 @@ li a:hover
     background-color: #111;
 }
 
-.active
-{
-    background-color: #aa0404;
-}
-
 li 
 {
     float: left;
 }
 
-
-  
-  
   body {
     font-family: Arial, sans-serif;
     background-color: #f0f0f0;
@@ -123,4 +115,53 @@ li
 h2{
     text-align: center;
     margin-top: 0px;
+}
+
+footer {
+  width: 100%;
+  background-color: rgb(2, 0, 0);
+  color: white;
+  padding: 10px;
+  font-family: Arial, sans-serif;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-top: auto;
+}
+
+#bottomlabel {
+  display: flex;
+  gap: 15px;
+  justify-content: flex-start;
+  padding: 10px;
+}
+
+#bottomlabel:hover {
+  background-color: #111;
+}
+
+.footerlabels {
+  display: inline-block;
+  padding: 20px;
+  color: white;
+  font-size: 30px;
+  text-align: left;
+  line-height: 55px;
+  text-decoration: none;
+  border-color: antiquewhite;
+  border-radius: 10px;
+  transition: color 0.3s ease;
+}
+
+.footerlabels:hover {
+  color: #e21710;
+}
+
+footer p {
+  font-size: 14px;
+  color: rgb(252, 252, 252);
+  text-align: left;
+  margin-left: 10px;
+  margin-top: 10px;
 }
