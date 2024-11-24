@@ -1,7 +1,7 @@
 # Collaborators
-Gracjan - Index Page ~ HTML, Reservation page
-Alex - About Page
-Oleksandr - Index Page ~ CSS, Gallery Page + JavaScript
+Gracjan - Index Page ~ HTML, Reservation page<br>
+Alex - About Page<br>
+Oleksandr - Index Page ~ CSS, Gallery Page + JavaScript<br>
 Nathan - Contact Page
 
 # Descriptions
