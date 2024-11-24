@@ -1,14 +1,28 @@
-/* resets the pages default margin and padding */
-* 
-{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Header */
-ul 
-{
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.main_content {
+    flex-grow: 1;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -17,89 +31,57 @@ ul
     position: sticky;
 }
 
-.nav-link 
-{ 
+.nav-link { 
     display: inline-block;
     width: 200px;
     height: 55px;
-
     color: rgb(249, 247, 247);
-
     text-align: center;
     line-height: 55px;
-
     text-decoration: none;
 }
 
-li a:hover 
-{
+li a:hover {
     background-color: #111;
 }
 
-li 
-{
+li {
     float: left;
 }
 
-
-/* When you hover over the buttons it will change the the button color to #111 on hover */
-li a:hover
-{
-    background-color: #111;
-}
-
-.active
-{
-    background-color: #aa0404;
-}
-
-.nav-link
-{
+.nav-link {
     display: inline-block;
     width: 200px;
     height: 55px;
-
     color: rgb(249,247,247);
-
     text-align: center;
-    line-height:  55px;
-
+    line-height: 55px;
     text-decoration: none;
 }
 
-
-/* Body */
-#h1
-{ 
+#h1 { 
     text-align: center;
     position: relative;  
 }
 
-
-
-/* Css for Form */
-.formel
-{
+.formel {
     width: 45%;
 }
 
-.formel input,.formel textarea
-{
+.formel input, .formel textarea {
     width: 100%; 
     padding: 15px;
     margin: 10px 0;
     border: 1px solid #ccc;
     border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1)
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-.formel textarea
-{
+.formel textarea {
     height: 200px;
 }
 
-button 
-{
+button {
     background-color: #007BFF; 
     color: white;
     padding: 15px;
@@ -109,61 +91,59 @@ button
     transition: background-color 0.3s ease;
 }
 
-button:hover 
-{
+button:hover {
     background-color: #0056b3;
 }
 
-.formbox 
-{
+.formbox {
     margin-top: 20px;
 }
 
-/* Footer */
-footer
-{
+footer {
     width: 100%;
-    height: 100%;
-
-    position: relative;
-    top: 0;
-    left: 0;
-
     background-color: rgb(2, 0, 0);
-   
+    color: white;
+    padding: 10px;
     font-family: Arial, sans-serif;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-top: auto;
 }
 
-
-#bottomlabel
-{
-    position : relative;
+#bottomlabel {
+    display: flex;
+    gap: 15px;
+    justify-content: flex-start;
+    padding: 10px;
 }
 
-#bottomlabel:hover
-{
-    background-color: #111; 
+#bottomlabel:hover {
+    background-color: #111;
 }
 
-
-.footerlabels 
-{
-    display: inline;
-    width: 20px;
-    height: 10px;
+.footerlabels {
+    display: inline-block;
     padding: 20px;
-    
-    border-color: antiquewhite;
-    border-bottom: 10px;
-    border-top: 10px;
-    border-left: 10px;
-    border-right: 10px;
-
     color: white;
     font-size: 30px;
-
-    text-align: center;
+    text-align: left;
     line-height: 55px;
-
     text-decoration: none;
+    border-color: antiquewhite;
+    border-radius: 10px;
+    transition: color 0.3s ease;
+}
+
+.footerlabels:hover {
+    color: #e21710;
+}
+
+footer p {
+    font-size: 14px;
+    color: rgb(252, 252, 252);
+    text-align: left;
+    margin-left: 10px;
+    margin-top: 10px;
 }
