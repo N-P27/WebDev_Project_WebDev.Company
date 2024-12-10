@@ -3,8 +3,10 @@
     
     <head>
         <meta charset = "utf-8"/>
+        <meta name = "viewport" content = "width = device-width"/>
         <title>Contact Page</title>
         <link rel = "stylesheet" href ="..\css\contact.css">
+       
     </head>
     
     <body>
@@ -13,7 +15,7 @@
                 <ul>
                     <li><a class = "nav-link" href="..\index.html">Wheels on Fire</a></li>
                     <li><a class = "nav-link" href="About.html">About Us</a></li>
-                    <li><a class = "nav-link" href="contact.html">Contact Us</a>
+                    <li><a class = "nav-link" href="contact.html">Contact Us</a></li>
                     <li><a class = "nav-link" href="gallery.html">Gallery</a></li>
                     <li><a class = "nav-link active" href="reservation.html">Book Reservation</a></li>
                 </ul>
@@ -30,29 +32,58 @@
 
                 <br>
 
-                <FORM>
+                <form id = "inquiryForm" onsubmit = "return ValidateForm()" >
                     <h2>Inquiry Form</h2>
 
-                        <div class = "formel">
-                        <input type = "text" placeholder = "Name :"> <br>
-                        <input type = "email" placeholder = "Email :"> <br>
-                        <input type = "tel" placeholder = "Contact.No :"> <br>
-                        <input list = "Inquiries" placeholder = "Reason for Inquiry :">
+                    <div class = "input-box" id = "name">
+                        <input type = "text" id = "firstName" placeholder = "First Name :" class = "item" autocomplete = "off" > <br>
+                        <div class = "error-txt" id = "firstNameError">Please enter your First name!</div>
+                    </div>
 
-                            <datalist id = "General">
-                                <option value = "Feedback">
-                                <option value = "Technical Support">
-                                <option value = "Other">
-                            </datalist>
+                    <div class = "input-box" id = "name">
+                        <input type = "text" id = "lastName" placeholder = "Last Name :" class = "item" autocomplete = "off" > <br>
+                        <div class = "error-txt" id = "lastNameError">Please enter your Last name!</div>
+                    </div>
 
-                        <textarea id = "other-details" placeholder = "If you selected 'Other' please expand in further details below :"></textarea>
-                        <button>Submit</button>
-                        <br><br><br><br>
-                        </div>
-                </FORM>
+                    <div class = "input-box">
+                        <input type = "email" id = "email" placeholder = "Email :" class = "item" autocomplete = "off" > <br>
+                        <div class = "error-txt" id = "emailError">Please enter an email</div>
+                    </div>
+
+                    <div class = "input-box">
+                        <input type = "tel" id = "phone" placeholder = "Contact.No :" class = "item" autocomplete = "off"> <br>
+                        <div class = "error-txt" id = "phoneError">Please enter your Mobile Number</div>
+                    </div>
+
+                    <div class = "input-box">
+                        <input list = "options" id = "inquiries" placeholder = "Reason for Inquiry :" class = "item" autocomplete = "off" >
+
+                        <datalist id  ="options">
+                            <option value = "Feedback">
+                            <option value = "Technical Support">
+                            <option value = "General">
+                            <option value = "Other">
+                        </datalist>
+
+                        <div class = "error-txt" id = "inquiryError">Please choose one of the following options</div>
+
+                    </div>
+
+                    <div class = "input-box">
+                        <textarea id = "other-details" placenholder = "If you selected 'Other' please expand in further details below :"></textarea><br>
+                        <div class = "error-txt" id = "otherError">Please enter in your message</div>
+                        <br><br>
+
+                    </div>
+
+                    <button type = "submit">Submit Form</button>
+                    <br><br><br><br>
+
+                </form>
 
             </div>
         </div>
+        <script type="text/javascript" src = "../java_script/contact.js"></script>
     </body>
     
         <footer>

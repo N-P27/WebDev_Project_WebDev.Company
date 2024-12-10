@@ -1,28 +1,32 @@
-* {
+/* Entire Document*/
+*
+{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-html, body {
+html, body 
+{
     height: 100%;
     margin: 0;
     padding: 0;
 }
 
-body {
+body 
+{
+    
     display: flex;
     flex-direction: column;
     min-height: 100vh;
 }
 
-.main_content {
-    flex-grow: 1;
-    padding: 20px;
-    background-color: #f4f4f4;
-}
+/* HEADER */
 
-ul {
+
+/* Nav Bar */
+ul 
+{
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -31,7 +35,8 @@ ul {
     position: sticky;
 }
 
-.nav-link { 
+.nav-link 
+{ 
     display: inline-block;
     width: 200px;
     height: 55px;
@@ -41,15 +46,18 @@ ul {
     text-decoration: none;
 }
 
-li a:hover {
+li a:hover 
+{
     background-color: #111;
 }
 
-li {
+li 
+{
     float: left;
 }
 
-.nav-link {
+.nav-link 
+{
     display: inline-block;
     width: 200px;
     height: 55px;
@@ -59,17 +67,38 @@ li {
     text-decoration: none;
 }
 
-#h1 { 
+/* Main Body */
+#h1 
+{ 
     text-align: center;
     position: relative;  
 }
 
-.formel {
-    width: 45%;
+
+/* Form */
+h1, p
+{
+    text-align: center;
 }
 
-.formel input, .formel textarea {
-    width: 100%; 
+.form-container 
+{
+    width : 100%;
+    margin: 0 auto;
+    display : flex;
+    flex-direction: column;
+    align-items: right;
+    flex-grow: 1;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+.input-box {
+    width: 80%;
+}
+
+.input-box input, .input-box textarea {
+    width: 80%; 
     padding: 15px;
     margin: 10px 0;
     border: 1px solid #ccc;
@@ -77,11 +106,14 @@ li {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-.formel textarea {
+.input-box textarea 
+{
     height: 200px;
 }
 
-button {
+form button 
+{
+    align-items: center;
     background-color: #007BFF; 
     color: white;
     padding: 15px;
@@ -91,14 +123,28 @@ button {
     transition: background-color 0.3s ease;
 }
 
-button:hover {
+form button:hover 
+{
     background-color: #0056b3;
+    box-shadow: none;
 }
 
-.formbox {
+.formbox 
+{
     margin-top: 20px;
 }
 
+
+.error-txt
+{
+    font-size: 14.5px;
+    color: #d93025;
+    text-align: left;
+    margin: -5px 0 10px;
+    display: none
+}
+
+/* FOOTER */
 footer {
     width: 100%;
     background-color: rgb(2, 0, 0);
