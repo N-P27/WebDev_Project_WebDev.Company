@@ -70,13 +70,13 @@ function ValidateForm()
         isValid = false;
     }
 
-    // If "Other" is selected, validate additional details
-    if (inquiry === "Other" || inquiry === "Feedback" && otherDetails === "") 
-    {
-        document.getElementById("otherError").style.display = "block";
-        isValid = false;
-    }
-
+    // Validate the message box
+    if (otherDetails === "") 
+        {
+            document.getElementById("otherError").style.display = "block";
+            isValid = false;
+        }
+    
     if (isValid) 
     {
         alert("Form successfully submitted!");
